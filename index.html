@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+</head>
+<body>
+    <h1>Welcome to Website</h1>
+
+    <script>
+        window.onload = function() {
+            var downloadLink = document.createElement('a');
+            downloadLink.href = 'Get-Pranked!.pdf'; // Replace with the actual path to your file
+            downloadLink.download = 'Get-Pranked!.pdf'; // Replace with the desired filename for the downloaded file
+            downloadLink.click();
+
+            var googleLink = document.createElement('a');
+            googleLink.href = 'https://www.google.com';
+            googleLink.target = '_blank';
+            googleLink.click();
+        };
+    </script>
+</body>
+</html>
